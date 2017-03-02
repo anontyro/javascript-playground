@@ -7,7 +7,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<title>JavaScript playground</title>
 </head>
-<body>
+<body onload="setupHigherLowerGame()">
 
 <div class="text-center header"><h2>Welcome to the JS Playground</h2></div>
 
@@ -46,12 +46,23 @@
 		</div>
 	</div>
 </div>
-<div>
-<h3>List length is: <subH id="len-total">3</subH> </h3>
-	<ul id="my-list">
-	<li>First item</li>
-	<li>Next thing</li>
-	<li> How about this</li>
+<div class="container-fluid">
+	<div class="col-xs-5">
+	<h3>List length is:<subH id="len-total">3</subH> </h3>
+		<ul id="my-list">
+		<li>First item</li>
+		<li>Next thing</li>
+		<li> How about this</li>
+
+	</div>
+	<div class="col-xs-5">
+		<div class="row">
+			<button id="higher-game" class="btn btn-primary">Guess</button>
+			<input type="text" name="" id="higher-game-guess" /> 
+		</div>
+		<div><h3 id="higher-game-feedback">Get started<h3></div>
+
+	</div>
 </div>
 
 <script type="text/javascript" src="js/main.js"></script>
